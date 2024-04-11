@@ -1,0 +1,59 @@
+.effect:hover {
+  background-color: white;
+  color: black;
+  transform: scaleX(1.025);
+  border: none;}
+
+.effect {
+  transition: all 0.15s;}
+
+.viewport:hover {
+  transform: scale(1.0125);}
+
+.viewport {
+  transition: all 0.15s;
+  transition-timing-function: cubic-bezier(.21,-1.41,.73,1.7);}
+
+.button-mode:hover {
+  border-radius: 8px;
+  animation: button 0.5s ease-in-out 0.25s forwards;}
+
+.button-mode {
+  transition: all 0.15s;}
+
+.color:hover {
+  background-image: radial-gradient(rgb(0, 255, 255), rgba(0, 255, 255, 0.25));}
+
+.nodes:hover .node-one {
+  transform: scale(1);
+  translate: 0 100%;}
+
+.node-one:hover {
+  box-shadow: 0 0 16px black;}
+.node-one {
+  transition: all 0.15s;}
+
+.element-pw-r:hover {
+  text-decoration: underline;
+}
+
+.element-pw-l:hover {
+  text-decoration: underline;
+}
+
+@keyframes move {
+  0% {translate: 0 0;}
+  50% {translate: 0 -20px;}
+  100% {translate: 0 0;}}
+
+@keyframes fadein {
+  0% {translate: 2vw 2vh; transform: scale(0.98); opacity: 50%; filter: blur(2px);}}
+
+@keyframes button {
+  0% {}
+  100% {color: black; background-color: white; border-radius: 12px;}}
+
+@keyframes saving {
+  0% {color: white;}
+  66% {color: orange;}
+  100% {color: red;}}
